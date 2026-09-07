@@ -11,12 +11,11 @@ function Intro() {
         </p>
         <h1 id="intro-title">
           Hi, I&apos;m {intro.name}.<br />
-          <span>I make ideas work.</span>
         </h1>
         <p className="intro-description">{intro.description}</p>
         <div className="intro-actions">
           <a className="button button-primary" href={intro.resumeUrl} download>
-            Download résumé <span aria-hidden="true">↓</span>
+            Download resume <span aria-hidden="true">↓</span>
           </a>
           <a className="button button-secondary" href={`mailto:${intro.email}`}>
             {intro.email}

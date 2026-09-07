@@ -5,7 +5,7 @@ import './Experience.css'
 function Experience() {
   return (
     <section className="section experience" id="experience" aria-labelledby="experience-title">
-      <SectionHeading id="experience-title" index="02" title="Experience" description="Learning by contributing, collaborating, and shipping." />
+      <SectionHeading id="experience-title" index="02" title="Experience" description="" />
       <div className="experience-list">
         {experience.map((item) => (
           <article className="experience-card" key={`${item.role}-${item.organization}`}>

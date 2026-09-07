@@ -5,10 +5,10 @@ import './About.css'
 function About() {
   return (
     <section className="section about" id="about" aria-labelledby="about-title">
-      <SectionHeading id="about-title" index="05" title="A little more human" />
+      <SectionHeading id="about-title" index="05" title="About me" />
       <div className="about-content">
         <p>{about}</p>
-        <p className="about-note">Curious by default. Intentional in the details.</p>
+        <p className="about-note">"Thank goodness we don't have only serious problems, but ridiculous ones as well." - Edsger Dijkstra</p>
       </div>
     </section>
   )

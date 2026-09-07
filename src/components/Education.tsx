@@ -1,8 +1,12 @@
+import { useId, useState } from 'react'
 import { education } from '../data/portfolio'
 import SectionHeading from './SectionHeading'
 import './Education.css'
 
 function Education() {
+  const [coursesOpen, setCoursesOpen] = useState(false)
+  const coursesPanelId = useId()
+
   return (
     <section className="section education" id="education" aria-labelledby="education-title">
       <SectionHeading id="education-title" index="04" title="Education" />
@@ -22,20 +26,30 @@ function Education() {
             <dd>{education.gpa}</dd>
           </div>
         </dl>
-        <details className="courses">
-          <summary>
+        <div className="courses" data-open={coursesOpen}>
+          <button
+            className="courses-toggle"
+            type="button"
+            aria-expanded={coursesOpen}
+            aria-controls={coursesPanelId}
+            onClick={() => setCoursesOpen((open) => !open)}
+          >
             <span>Relevant courses</span>
             <span className="summary-icon" aria-hidden="true" />
-          </summary>
-          <ul>
-            {education.courses.map((course) => (
-              <li key={course.name}>
-                <strong>{course.name}</strong>
-                <span>{course.description}</span>
-              </li>
-            ))}
-          </ul>
-        </details>
+          </button>
+          <div className="courses-panel" id={coursesPanelId} aria-hidden={!coursesOpen}>
+            <div className="courses-panel-inner">
+              <ul>
+                {education.courses.map((course) => (
+                  <li key={course.name}>
+                    <strong>{course.name}</strong>
+                    <span>{course.description}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
       </article>
     </section>
   )

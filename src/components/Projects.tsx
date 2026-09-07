@@ -8,8 +8,8 @@ function Projects() {
       <SectionHeading
         id="projects-title"
         index="01"
-        title="Selected projects"
-        description="A few things I’ve designed, built, and learned from. Open a project for the engineering details."
+        title="Projects"
+        description="A few things I’ve designed, built, and learned from."
       />
       <div className="project-list">
         {projects.map((project, index) => {
@@ -21,7 +21,10 @@ function Projects() {
               </div>
               <div className="project-content">
                 <div className="project-title-row">
-                  <h3>{project.name}</h3>
+                  <div className="project-heading">
+                    <h3>{project.name}</h3>
+                    {project.inProgress && <span className="project-status">In Progress</span>}
+                  </div>
                   <a href={project.githubUrl} target="_blank" rel="noreferrer" aria-label={`${project.name} on GitHub`}>
                     GitHub <span aria-hidden="true">↗</span>
                   </a>

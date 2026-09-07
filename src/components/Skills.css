@@ -24,6 +24,7 @@
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
   gap: 0.75rem;
 }
 
@@ -39,27 +40,49 @@
   background: var(--paper-light);
 }
 
-.skill-card summary,
+.skill-card-toggle,
 .skill-card-static {
   padding: 1.5rem;
   font-size: 1rem;
   font-weight: 600;
 }
 
-.skill-card summary {
+.skill-card-toggle {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   gap: 1rem;
+  border: 0;
+  color: inherit;
+  background: transparent;
   cursor: pointer;
-  list-style: none;
+  font-family: inherit;
+  text-align: left;
 }
 
-.skill-card p {
+.skill-card-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 240ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 160ms ease;
+}
+
+.skill-card-panel-inner {
+  overflow: hidden;
+}
+
+.skill-card-panel p {
   padding: 0 1.5rem 1.5rem;
   color: var(--ink-soft);
   font-size: 0.86rem;
   line-height: 1.6;
-  animation: detail-in 180ms ease-out;
+}
+
+.skill-card[data-open='true'] .skill-card-panel {
+  grid-template-rows: 1fr;
+  opacity: 1;
 }
 
 .skill-plus {
@@ -69,7 +92,7 @@
   transition: transform 180ms ease;
 }
 
-.skill-card[open] .skill-plus {
+.skill-card[data-open='true'] .skill-plus {
   transform: rotate(45deg);
 }
 

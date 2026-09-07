@@ -1,6 +1,6 @@
 # Portfolio Page V1
 
-A responsive student software engineering portfolio built with React, Vite,
+A responsive software engineering portfolio built with React, Vite,
 TypeScript, and CSS.
 
 ## Local development
@@ -19,19 +19,17 @@ npm run build
 
 ## Updating portfolio content
 
-All personal and portfolio information lives in `src/data/portfolio.ts`. Replace
-the clearly labeled placeholder values there without changing component logic or
-styles.
+All personal and portfolio information lives in `src/data/portfolio.ts`. They
+can be updated at will without having to update the site's code.
 
 Replace these placeholder assets before publishing:
-
-- `public/profile-placeholder.svg` with a profile image, updating `profileImage`
-  in the content file if the filename changes.
-- `public/resume-placeholder.pdf` with the verified résumé, updating `resumeUrl`
-  if the filename changes.
 
 Optional project screenshots can be placed in `public/` and connected through a
 project's `image` and `imageAlt` properties.
 
-Deployment infrastructure is intentionally not included in this version, per the
-project specification.
+## AWS deployment
+
+The GitHub Actions workflow in `.github/workflows/deploy.yml` deploys pushes to
+`main` to a private S3 bucket and refreshes the CloudFront cache. Follow the
+step-by-step IAM, OIDC, S3, CloudFront, and GitHub configuration guide in
+[`docs/deployment.md`](docs/deployment.md) before running it.
