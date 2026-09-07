@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 840" role="img" aria-labelledby="title description">
+  <title id="title">Profile photo placeholder</title>
+  <desc id="description">A neutral placeholder marked with the words your photo.</desc>
+  <rect width="720" height="840" fill="#15232d"/>
+  <circle cx="360" cy="302" r="128" fill="#9fe8de" opacity=".9"/>
+  <path d="M126 760c25-169 111-254 234-254s209 85 234 254" fill="#9fe8de" opacity=".9"/>
+  <text x="360" y="796" fill="#f5f2e8" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" letter-spacing="6">YOUR PHOTO</text>
+</svg>

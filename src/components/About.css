@@ -1,0 +1,42 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2.35fr;
+  gap: 2rem;
+}
+
+.about .section-heading {
+  display: block;
+  padding: 0;
+  border: 0;
+}
+
+.about .section-heading h2 {
+  margin-top: 1.25rem;
+  font-size: clamp(2.4rem, 4.5vw, 4.5rem);
+}
+
+.about-content {
+  padding-top: 0.5rem;
+}
+
+.about-content > p:first-child {
+  max-width: 46rem;
+  font-size: clamp(1.35rem, 2.6vw, 2.35rem);
+  letter-spacing: -0.035em;
+  line-height: 1.4;
+}
+
+.about-note {
+  margin-top: 2.5rem;
+  color: var(--teal);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .about {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

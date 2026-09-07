@@ -1,0 +1,58 @@
+.contact {
+  display: grid;
+  grid-template-columns: minmax(8rem, 1fr) 2.35fr;
+  gap: 2rem;
+  padding: var(--section-space) max(var(--page-pad), calc((100vw - var(--max-width)) / 2));
+  scroll-margin-top: 5rem;
+  color: var(--paper-light);
+  background: var(--teal);
+}
+
+.contact .section-index {
+  padding-top: 0.75rem;
+  color: var(--teal-bright);
+}
+
+.contact-kicker {
+  margin-bottom: 1.5rem;
+  color: var(--teal-bright);
+}
+
+.contact h2 {
+  max-width: 12ch;
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  font-weight: 500;
+  letter-spacing: -0.07em;
+  line-height: 0.96;
+}
+
+.contact-email {
+  display: inline-block;
+  margin-top: 2.5rem;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.5rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contact-links a {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  text-underline-offset: 0.35rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,55 @@
+main {
+  overflow: hidden;
+}
+
+.section {
+  width: min(calc(100% - (2 * var(--page-pad))), var(--max-width));
+  margin-inline: auto;
+  padding-block: var(--section-space);
+  scroll-margin-top: 5rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-height: 3.25rem;
+  padding: 0.85rem 1.25rem;
+  border: 1px solid var(--ink);
+  font-size: 0.83rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 180ms ease, background-color 180ms ease, transform 180ms ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button-primary {
+  color: var(--paper-light);
+  background: var(--ink);
+}
+
+.button-primary:hover {
+  background: var(--teal);
+  border-color: var(--teal);
+}
+
+.button-secondary:hover {
+  color: var(--paper-light);
+  background: var(--ink);
+}
+
+.section-index,
+.eyebrow,
+.detail-label,
+.education-label,
+.contact-kicker {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}

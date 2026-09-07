@@ -1,0 +1,21 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.5rem max(var(--page-pad), calc((100vw - var(--max-width)) / 2));
+  color: #9fabae;
+  background: var(--navy);
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+}
+
+footer a {
+  text-underline-offset: 0.3rem;
+}
+
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+  }
+}
