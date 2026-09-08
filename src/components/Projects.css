@@ -92,13 +92,19 @@
   margin-top: 2rem;
 }
 
-.project-details summary,
+.project-details-toggle,
 .courses-toggle {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   padding-block: 1rem;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
   border-top: 1px solid var(--line);
+  color: inherit;
+  background: transparent;
   cursor: pointer;
   font-family: var(--mono);
   font-size: 0.73rem;
@@ -108,9 +114,22 @@
   text-transform: uppercase;
 }
 
-.project-details summary::-webkit-details-marker,
-.skill-card summary::-webkit-details-marker {
-  display: none;
+.project-details-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 240ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 160ms ease;
+}
+
+.project-details-panel-inner {
+  overflow: hidden;
+}
+
+.project-details[data-open='true'] .project-details-panel {
+  grid-template-rows: 1fr;
+  opacity: 1;
 }
 
 .summary-icon {
@@ -136,7 +155,7 @@
   transform: translate(-50%, -50%) rotate(90deg);
 }
 
-details[open] .summary-icon::after {
+.project-details[data-open='true'] .summary-icon::after {
   transform: translate(-50%, -50%) rotate(0deg);
 }
 
