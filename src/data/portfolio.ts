@@ -56,7 +56,7 @@ export const intro: Intro = {
     "I'm a highly curious individual who loves to learn and to build clean, solid software.",
   email: "tylerabartschi@gmail.com",
   profileImage: "/profile_picture.jpeg",
-  resumeUrl: "/resume-placeholder.pdf",
+  resumeUrl: "/RESUME_Tyler_Bartschi_2026.pdf",
   socialLinks: [
     { label: "GitHub", href: "https://github.com/tyler-bartschi" },
     { label: "LinkedIn", href: "www.linkedin.com/in/tyler-bartschi-773450202" },
@@ -76,6 +76,7 @@ export const projects: Project[] = [
       "Built as a CLI tool so that you can launch it from any terminal, including within your IDE.",
       "Includes built-in safeguards that allow you to choose which files your agent can modify, as well as asking for permission before risky actions.",
       "Makes use of prompt engineering to refine agent personality and behavior - tailored to the task at hand.",
+      "Built custom tools to facilitate agent action, and natively uses multi-agent workflows.",
     ],
   },
   {
@@ -155,7 +156,7 @@ export const experience: Experience[] = [
     accomplishments: [
       "Redesigned the user-facing cloud storage system (using Google Cloud), resulting in a 30% reduction in overall storage used, as well as accurate per-user limit tracking and better user control over uploaded files.",
       "Highly involved in designing and building CI/CD pipelines, including automated testing and cloud deployment, as well as custom cross-repository connection tools.",
-      "Designed and built a first-party analytics system for tracking business and user-facing metrics.",
+      "Designed and built a custom analytics system for tracking business and user-facing metrics.",
       "Participated in major codebase refactors and redesigns to increase code readability and maintainability.",
     ],
   },
@@ -234,9 +235,11 @@ export const skillGroups: SkillGroup[] = [
         name: "Linux and Unix",
         description: "Moderate familiarity and usage with Unix CLI tools",
       },
-      { name: "Docker",
-        description: "Moderate familiary with using Docker; including to run code within a safe environment (see Almost-Codex)."
-      }
+      {
+        name: "Docker",
+        description:
+          "Moderate familiary with using Docker; including to run code within a safe environment (see Almost-Codex).",
+      },
     ],
   },
   {
