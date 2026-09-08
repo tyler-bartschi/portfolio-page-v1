@@ -51,6 +51,11 @@
   text-transform: uppercase;
 }
 
+.project-status-completed {
+  border-color: #adb9b4;
+  color: var(--ink-soft);
+}
+
 .project-title-row a {
   flex: 0 0 auto;
   font-family: var(--mono);

@@ -53,7 +53,7 @@ export const intro: Intro = {
   title: "Computer Science Student",
   eyebrow: "Aspiring software engineer · Open to internships",
   description:
-    "I'm a highly curious individual who loves to learn and to build clean, solid software.",
+    "I'm a highly curious programmer who loves to learn and to build clean, solid software.",
   email: "tylerabartschi@gmail.com",
   profileImage: "/profile_picture.jpeg",
   resumeUrl: "/PUBLIC_RESUME_Tyler_Bartschi_2026.pdf",
@@ -127,7 +127,7 @@ export const projects: Project[] = [
     name: "bad_zip",
     inProgress: true,
     description:
-      "A CLI compression tool that uses Huffman Encoding, named bad_zip because the goal is to be similar to the zip utility, except not quite as good (no LZ compressin)",
+      "A CLI compression tool that uses Huffman Encoding, named bad_zip because the goal is to be similar to the zip utility, except not quite as good (no LZ compression)",
     githubUrl: "https://github.com/tyler-bartschi/bad_zip",
     importantTechnologies: ["C++", "CMake", "Catch2"],
     otherTechnologies: [],

@@ -23,7 +23,11 @@ function Projects() {
                 <div className="project-title-row">
                   <div className="project-heading">
                     <h3>{project.name}</h3>
-                    {project.inProgress && <span className="project-status">In Progress</span>}
+                    <span
+                      className={`project-status${project.inProgress ? '' : ' project-status-completed'}`}
+                    >
+                      {project.inProgress ? 'In Progress' : 'Completed'}
+                    </span>
                   </div>
                   <a href={project.githubUrl} target="_blank" rel="noreferrer" aria-label={`${project.name} on GitHub`}>
                     GitHub <span aria-hidden="true">↗</span>
