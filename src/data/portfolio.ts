@@ -56,10 +56,10 @@ export const intro: Intro = {
     "I'm a highly curious individual who loves to learn and to build clean, solid software.",
   email: "tylerabartschi@gmail.com",
   profileImage: "/profile_picture.jpeg",
-  resumeUrl: "/RESUME_Tyler_Bartschi_2026.pdf",
+  resumeUrl: "/PUBLIC_RESUME_Tyler_Bartschi_2026.pdf",
   socialLinks: [
     { label: "GitHub", href: "https://github.com/tyler-bartschi" },
-    { label: "LinkedIn", href: "www.linkedin.com/in/tyler-bartschi-773450202" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/tyler-bartschi-773450202" },
   ],
 };
 
@@ -177,8 +177,16 @@ export const skillGroups: SkillGroup[] = [
     category: "Languages",
     skills: [
       {
-        name: "TypeScript",
-        description: "Used extensively for full-stack web programming.",
+        name: "C",
+      },
+      {
+        name: "C++",
+        description: "Experience in C++ building data structures and CLI tools",
+      },
+      {
+        name: "Java",
+        description:
+        "Used to design and build a CLI client and associated server in Javalin",
       },
       {
         name: "Python",
@@ -186,16 +194,8 @@ export const skillGroups: SkillGroup[] = [
           "Language of choice for LeetCode-style algorithmic problems, and the first language I learned",
       },
       {
-        name: "Java",
-        description:
-          "Used to design and build a CLI client and associated server in Javalin",
-      },
-      {
-        name: "C++",
-        description: "Experience in C++ building data structures and CLI tools",
-      },
-      {
-        name: "C",
+        name: "TypeScript",
+        description: "Used extensively for full-stack web programming.",
       },
     ],
   },
@@ -203,13 +203,14 @@ export const skillGroups: SkillGroup[] = [
     category: "Web & Tools",
     skills: [
       {
-        name: "React",
-        description: "",
+        name: "AWS",
+        description:
+          "Have used a variety of services in AWS, including: Lambda, DynamoDB, SQS, CloudFront, CloudFormation, SAM, S3, API Gateway, EC2, and Route53.",
       },
       {
-        name: "Vue",
+        name: "Docker",
         description:
-          "Used Vue extensively to build products at my last internship",
+          "Moderate familiary with using Docker; including to run code within a safe environment (see Almost-Codex).",
       },
       {
         name: "Git",
@@ -221,11 +222,7 @@ export const skillGroups: SkillGroup[] = [
         description:
           "Experience with PR processes, GitHub Actions, and organization tools such as branch protections.",
       },
-      {
-        name: "AWS",
-        description:
-          "Have used a variety of services in AWS, including: Lambda, DynamoDB, SQS, CloudFront, CloudFormation, SAM, S3, API Gateway, EC2, and Route53.",
-      },
+      
       {
         name: "Google Cloud and Firebase",
         description:
@@ -236,9 +233,13 @@ export const skillGroups: SkillGroup[] = [
         description: "Moderate familiarity and usage with Unix CLI tools",
       },
       {
-        name: "Docker",
+        name: "React",
+        description: "",
+      },
+      {
+        name: "Vue",
         description:
-          "Moderate familiary with using Docker; including to run code within a safe environment (see Almost-Codex).",
+          "Used Vue extensively to build products at my last internship",
       },
     ],
   },
@@ -250,8 +251,8 @@ export const skillGroups: SkillGroup[] = [
         description:
           "Experience designing and building tools that leverage AI models using prompt engineering, tool-calling, RAG, etc.",
       },
-      { name: "Data Structures" },
       { name: "Algorithms" },
+      { name: "Data Structures" },
       { name: "Object-Oriented Design" },
       {
         name: "Testing",
@@ -279,8 +280,9 @@ export const education: Education = {
         "Algorithmic design using principles like Dynamic Programming and Divide and Conquer; analysis of those algorithms using thoeretical and empirical Big-O.",
     },
     {
-      name: "Software Design",
-      description: "Object-Oriented design principles.",
+      name: "Computer Systems",
+      description:
+        "Introduction to Assembly (x86) and low-level computer operations.",
     },
     {
       name: "Data Structures & Algorithms",
@@ -293,9 +295,8 @@ export const education: Education = {
         "Predicate and propositional logic; Parsing and Interpreting a program.",
     },
     {
-      name: "Computer Systems",
-      description:
-        "Introduction to Assembly (x86) and low-level computer operations.",
+      name: "Software Design",
+      description: "Object-Oriented design principles.",
     },
   ],
 };

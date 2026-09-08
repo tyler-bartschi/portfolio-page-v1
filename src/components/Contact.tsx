@@ -6,8 +6,7 @@ function Contact() {
     <section className="contact" id="contact" aria-labelledby="contact-title">
       <p className="section-index">/06</p>
       <div>
-        <p className="contact-kicker">Have an opportunity or an idea?</p>
-        <h2 id="contact-title">Let&apos;s build something useful.</h2>
+        <h2 id="contact-title">Want to reach out? Here's my contact info</h2>
         <a className="contact-email" href={`mailto:${intro.email}`}>
           {intro.email} <span aria-hidden="true">↗</span>
         </a>
@@ -18,7 +17,7 @@ function Contact() {
             </a>
           ))}
           <a href={intro.resumeUrl} download>
-            Résumé
+            Resume
           </a>
         </div>
       </div>
