@@ -59,7 +59,7 @@ export const intro: Intro = {
   resumeUrl: "/PUBLIC_RESUME_Tyler_Bartschi_2026.pdf",
   socialLinks: [
     { label: "GitHub", href: "https://github.com/tyler-bartschi" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/tyler-bartschi-773450202" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/tyler-bartschi" },
   ],
 };
 
