@@ -60,6 +60,10 @@ export const intro: Intro = {
   socialLinks: [
     { label: "GitHub", href: "https://github.com/tyler-bartschi" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/tyler-bartschi" },
+    {
+      label: "Handshake",
+      href: "https://app.joinhandshake.com/profiles/5etuph",
+    },
   ],
 };
 
@@ -186,7 +190,7 @@ export const skillGroups: SkillGroup[] = [
       {
         name: "Java",
         description:
-        "Used to design and build a CLI client and associated server in Javalin",
+          "Used to design and build a CLI client and associated server in Javalin",
       },
       {
         name: "Python",
@@ -222,7 +226,7 @@ export const skillGroups: SkillGroup[] = [
         description:
           "Experience with PR processes, GitHub Actions, and organization tools such as branch protections.",
       },
-      
+
       {
         name: "Google Cloud and Firebase",
         description:
